@@ -27,11 +27,11 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/asus/Z00A/overlay
+    device/asus/Z00XS/overlay
 
 # Boot image Signature
 PRODUCT_COPY_FILES += \
-    device/asus/Z00A/keys/boot_z00a.sig:install/bin/boot.sig
+    device/asus/Z00XS/keys/boot_z00a.sig:install/bin/boot.sig
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
@@ -39,11 +39,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    device/asus/Z00A/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/asus/Z00A/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
+    device/asus/Z00XS/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/asus/Z00XS/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    sys.nfc.project_id_str=ze551ml \
+    sys.nfc.project_id_str=zx55l \
     sys.nfc.loc=gold \
     sys.nfc.brcm.cfg=/etc/libnfc-brcm.conf \
     sys.nfc.brcm.chip_cfg=/etc/libnfc-brcm-20795a20.conf \
@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
-$(call inherit-product-if-exists, vendor/asus/Z00A/Z00A-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/Z00XS/Z00XS-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/asus/mofd-common/mofd.mk)

@@ -18,17 +18,17 @@
 -include device/asus/mofd-common/BoardConfigCommon.mk
 
 # Charger
-BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/asus/Z00A/charger/images
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/asus/Z00XS/charger/images
 
 # Mkbootimg
-BOARD_BOOT_KEY := device/asus/Z00A/keys/boot_z00a.sig
-BOARD_RECOVERY_KEY := device/asus/Z00A/keys/recovery_z00a.sig
+BOARD_BOOT_KEY := device/asus/Z00XS/keys/boot_z00a.sig
+BOARD_RECOVERY_KEY := device/asus/Z00XS/keys/recovery_z00a.sig
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 59261286400
 
 # Require Ifwi version
-TARGET_BOARD_INFO_FILE ?= device/asus/Z00A/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/asus/Z00XS/board-info.txt
 
 # Use the non-open-source parts, if they're present
--include vendor/asus/Z00A/BoardConfigVendor.mk
+-include vendor/asus/Z00XS/BoardConfigVendor.mk
