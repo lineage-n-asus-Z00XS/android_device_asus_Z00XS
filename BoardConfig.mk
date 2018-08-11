@@ -25,7 +25,7 @@ BOARD_BOOT_KEY := device/asus/Z00XS/keys/boot_z00a.sig
 BOARD_RECOVERY_KEY := device/asus/Z00XS/keys/recovery_z00a.sig
 
 # Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 59261286400
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 121785773056
 
 # Require Ifwi version
 TARGET_BOARD_INFO_FILE ?= device/asus/Z00XS/board-info.txt
